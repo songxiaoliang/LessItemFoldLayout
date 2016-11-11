@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/item_divider"
+    android:showDividers="middle|beginning|end"
+    android:orientation="vertical"
+    tools:context="com.example.song.foldlayout.MainActivity">
+    <com.example.song.foldlayout.FoldLayout
+        android:id="@+id/foldlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/layout_menu_msg"
+        />
+    <com.example.song.foldlayout.FoldLayout
+        android:id="@+id/foldlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/layout_menu_data"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <com.example.song.foldlayout.FoldLayout
+        android:id="@+id/foldlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/layout_item_plan"
+        />
+</LinearLayout>
