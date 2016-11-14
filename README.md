@@ -1,8 +1,10 @@
+
 # LessItemFoldLayout
 Android ItemFoldLayout，可以很便捷的实现点击Menu展开Item的抽屉效果。使用场景：例如，在App的个人设置界面。
 ###使用方式：
 ####xml文件:
-<com.example.song.foldlayout.FoldLayout
+
+#####<com.example.song.foldlayout.FoldLayout
      android:id="@+id/foldlayout1"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
