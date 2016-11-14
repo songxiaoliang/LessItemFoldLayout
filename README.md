@@ -28,24 +28,24 @@ Android ItemFoldLayout，可以很便捷的实现点击Menu展开Item的抽屉�
         android:drawableLeft="@drawable/love"
         android:drawableRight="@drawable/arrow"
         />
-</LinearLayout>
+#####</LinearLayout>
 ####Activity:
-#####        /**
-#####         * 在Menu下添加两个Item
-#####         */
-#####        List<View> views = new ArrayList<>();
-#####        for (int i = 0;i<2;i++) {
-#####            views.add(getLayoutInflater().inflate(R.layout.layout_item,null));
-#####        }
-#####        foldlayout.addItemView(views);
+        /**
+         * 在Menu下添加两个Item
+         */
+       List<View> views = new ArrayList<>();
+       for (int i = 0;i<2;i++) {
+            views.add(getLayoutInflater().inflate(R.layout.layout_item,null));
+        }
+       foldlayout.addItemView(views);
 
 ####注册Item点击事件
-#####        /**
-#####         * 设置Item的单击事件
-#####         */
-#####        foldlayout.setOnItemClickListener(new FoldLayout.OnItemClickListener() {
-#####            @Override
-#####            public void onItemClick(View view, int position) {
-#####                Toast.makeText(MainActivity.this, "点击了第"+position+"个", Toast.LENGTH_SHORT).show();
-#####            }
-#####        });
+        /**
+         * 设置Item的单击事件
+         */
+        foldlayout.setOnItemClickListener(new FoldLayout.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Toast.makeText(MainActivity.this, "点击了第"+position+"个", Toast.LENGTH_SHORT).show();
+           }
+        });
