@@ -7,6 +7,7 @@ Android ItemFoldLayout，可以很便捷的实现点击Menu展开Item的抽屉�
 #####         android:layout_width="match_parent"
 #####         android:layout_height="wrap_content"
 #####         app:layoutId="@layout/layout_menu_data"//菜单布局，自定义
+#####         app:animationTime="1000"//动画时间，默认300毫秒
 #####         />
 
 ####定制Item布局，layout_item:
@@ -41,7 +42,7 @@ Android ItemFoldLayout，可以很便捷的实现点击Menu展开Item的抽屉�
 ####注册Item点击事件
 #####        /**
 #####         * 设置Item的单击事件
-#####        */
+#####         */
 #####        foldlayout.setOnItemClickListener(new FoldLayout.OnItemClickListener() {
 #####            @Override
 #####            public void onItemClick(View view, int position) {
