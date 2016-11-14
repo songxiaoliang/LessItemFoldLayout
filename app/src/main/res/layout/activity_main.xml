@@ -20,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layoutId="@layout/layout_menu_data"
+        app:animationTime="300"
         />
     <Space
         android:layout_width="match_parent"
