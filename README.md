@@ -12,23 +12,23 @@ Android ItemFoldLayout，可以很便捷的实现点击Menu展开Item的抽屉�
      />
 ####定制Item布局，layout_item:
 #####<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-#####    android:orientation="vertical"
-#####    android:layout_width="match_parent"
-#####    android:layout_height="wrap_content">
-#####    <TextView
-#####        android:layout_width="match_parent"
-#####        android:layout_height="50dp"
-#####        android:drawablePadding="5dp"
-#####        android:paddingLeft="10dp"
-#####        android:paddingRight="10dp"
-#####        android:layout_marginLeft="10dp"
-#####       android:gravity="center_vertical"
-#####        android:text="Songlcy"
-#####       android:background="@drawable/item_bg"
-#####       android:drawableLeft="@drawable/love"
-#####       android:drawableRight="@drawable/arrow"
-#####        />
-#####</LinearLayout>
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Songlcy"
+        android:background="@drawable/item_bg"
+        android:drawableLeft="@drawable/love"
+        android:drawableRight="@drawable/arrow"
+        />
+</LinearLayout>
 ####Activity:
 #####        /**
 #####         * 在Menu下添加两个Item
